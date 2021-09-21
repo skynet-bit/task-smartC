@@ -40,7 +40,11 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-
+# Secrets
+.firebaserc
+firebase.json
+.firebase/
+.vscode/
 # TypeScript v1 declaration files
 typings/
 

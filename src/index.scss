@@ -1,0 +1,278 @@
+$primary-color: #ffffff;
+$width: 100vw;
+$height: 100vh;
+$Success: #46b13d;
+$Primary-blue: #446ab2;
+$font-size-med: 2.5vh;
+.sucBut {
+  background-color: $Success;
+  padding: 5px;
+  border-radius: 15%;
+  color: white;
+  font-size: $font-size-med;
+}
+.defBut {
+  font-size: $font-size-med;
+  background-color: lightgray;
+  padding: 5px;
+  border-radius: 15%;
+  color: #585858;
+}
+.SecondSide {
+  opacity: 0;
+}
+body {
+  margin: 0;
+}
+.App {
+  height: $height;
+  width: $width;
+  background-color: $primary-color;
+
+  .Side {
+    height: $height;
+    width: 10%;
+    background-color: $primary-color;
+    position: relative;
+    float: left;
+    margin-left: 5px;
+    .SideBar {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      background-color: $primary-color;
+      height: 90%;
+      width: 80%;
+      border-right: 2px solid lightgray;
+    }
+    .Logo {
+      width: 100%;
+      height: 20%;
+      margin: auto;
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+    }
+
+    .IcCont {
+      margin-top: 15%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 30%;
+    }
+    .UcCont {
+      margin-top: 15%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      height: 40%;
+      flex-wrap: nowrap;
+    }
+  }
+  .Container {
+    height: $height;
+    width: 88%;
+    background-color: $primary-color;
+    position: relative;
+    display: inline-block;
+
+    .StatusBar {
+      display: flex;
+      text-align: left;
+      margin-top: 2%;
+      height: 5%;
+      width: 100%;
+      border-bottom: 2px solid lightgray;
+
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      .Status {
+        font-size: 24px;
+      }
+      .Buttons {
+        opacity: 0;
+      }
+      .butCont {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        .delBut {
+          opacity: 0;
+        }
+      }
+    }
+    .FormCont {
+      margin: 0;
+      position: relative;
+      background-color: $primary-color;
+      height: 40%;
+
+      width: 100%;
+      .Form {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-color: $primary-color;
+        width: 40%;
+        input {
+          width: 70%;
+          border: 2px solid lightskyblue;
+          border-radius: 5px;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+        }
+        .pFP {
+          width: 70%;
+          .Pass {
+            float: left;
+          }
+          .ForgotPass {
+            float: right;
+            color: $Primary-blue;
+          }
+        }
+        .Login {
+          margin: 0;
+          position: absolute;
+
+          left: 45%;
+
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+          background-color: $primary-color;
+          width: 40%;
+          .ButL {
+            width: 50%;
+
+            border-radius: 5px;
+            padding: 12px 12px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            text-align: center;
+            color: $primary-color;
+            background-color: $Success;
+          }
+        }
+      }
+    }
+    .contentCont {
+      height: 80%;
+      width: 100%;
+      display: none;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      .chC {
+        height: 90%;
+        width: 45%;
+      }
+      .leftCont {
+        background-color: #f4f4f4;
+        border-radius: 2%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        .actorImage {
+          height: 60%;
+          width: 90%;
+          position: relative;
+          img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 2%;
+          }
+          .Pbtn {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #ebf2ff;
+            color: $Primary-blue;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: 500;
+          }
+        }
+        .textArea {
+          -moz-appearance: textfield-multiline;
+          -webkit-appearance: textarea;
+
+          border-radius: 5%;
+          background-color: white;
+          font: medium -moz-fixed;
+          font: -webkit-small-control;
+          height: 25%;
+          overflow: auto;
+          padding: 2px;
+          resize: both;
+          width: 90%;
+        }
+      }
+      .rightCont {
+        .menu {
+          height: 10%;
+          width: 100%;
+          display: flex;
+          align-content: space-around;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;
+          .menuOpt {
+            margin: 2%;
+            color: #999999;
+            padding: 2%;
+            text-align: center;
+          }
+          .active {
+            color: $Primary-blue;
+          }
+        }
+        .mCont {
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          width: 100%;
+          justify-content: space-between;
+          align-items: stretch;
+
+          align-content: space-between;
+          .mImage {
+            width: 30%;
+            height: auto;
+            border: 1px solid lightgray;
+            border-radius: 5%;
+            margin-bottom: 5px;
+            img {
+              max-width: 90%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
